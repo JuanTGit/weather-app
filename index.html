@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="./js/main.js" defer></script>
+<title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center m-5">Weather Status</h1>
+        
+        <!-- Data Form -->
+        <form action="" id="dataForm">
+            <div class="row justify-content-center">
+                <div class="col-4 m-1">
+                        <label for="cityName">City</label>
+                        <input class="form-control" type="text" placeholder="Enter City" id="cityName">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 m-1">
+                    <label for="zipcode">Zipcode</label>
+                    <input class="form-control" type="text" placeholder="Enter Zipcode" id="zipcode">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 m-1">
+                    <button class="btn btn-primary form-control" type="submit">Submit</button>
+                </div>
+            </div>            
+        </form>
+                
+        <!-- Display Weather Data -->
+        <div class="row justify-content-center mt-5" id="weatherInfo">
+            <!-- Current Weather -->
+            <div class="card text-dark bg-light m-1" style="max-width: 18rem;">
+                <div class="card-header">Current</div>
+                <div class="card-body">
+                  <h5 class="card-title" id="currentTemp">Current Temperature</h5>
+                  <p class="card-text" id="currentDescription">Display of the current weather</p>
+                </div>
+            </div>
+            <!-- High Temp -->
+            <div class="card text-white bg-danger m-1" style="max-width: 18rem;">
+                <div class="card-header">High</div>
+                <div class="card-body">
+                  <h5 class="card-title" id="highTemp">Today's High</h5>
+                  <p class="card-text" id="highDescription">Today's high temperature</p>
+                </div>
+            </div>
+            <!-- Low Temp -->
+            <div class="card text-white bg-primary m-1" style="max-width: 18rem;">
+                <div class="card-header">Low</div>
+                <div class="card-body">
+                  <h5 class="card-title" id="lowTemp">Today's Low</h5>
+                  <p class="card-text" id="lowDescription">Today's low temperature</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
